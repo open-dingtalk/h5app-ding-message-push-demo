@@ -82,27 +82,27 @@ npm run build
 - 启动springboot
 - 移动端钉钉点击工作台，找到应用，进入应用
 
-### 页面展示
+[comment]: <> (### 页面展示)
 
-部门列表
+[comment]: <> (部门列表)
 
-![图1](/Users/nannanness/Desktop/11.png)
+[comment]: <> (![图1]&#40;/Users/nannanness/Desktop/11.png&#41;)
 
-部门用户列表
+[comment]: <> (部门用户列表)
 
-![图2](/Users/nannanness/Desktop/33.png)
+[comment]: <> (![图2]&#40;/Users/nannanness/Desktop/33.png&#41;)
 
-消息输入框
+[comment]: <> (消息输入框)
 
-![图3](/Users/nannanness/Desktop/44.png)
+[comment]: <> (![图3]&#40;/Users/nannanness/Desktop/44.png&#41;)
 
-发送成功提示
+[comment]: <> (发送成功提示)
 
-![图4](/Users/nannanness/Desktop/66.png)
+[comment]: <> (![图4]&#40;/Users/nannanness/Desktop/66.png&#41;)
 
-服务窗收到ding消息
+[comment]: <> (服务窗收到ding消息)
 
-![图5](/Users/nannanness/Desktop/77.png)
+[comment]: <> (![图5]&#40;/Users/nannanness/Desktop/77.png&#41;)
 
 ### **参考文档**
 
