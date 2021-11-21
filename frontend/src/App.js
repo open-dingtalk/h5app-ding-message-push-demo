@@ -4,6 +4,7 @@ import "./App.css"
 import "antd/dist/antd.min.css"
 import {Button, message, Input, Radio, Space} from "antd"
 import {login} from "./login.js";
+
 // import * as dd from "dingtalk-jsapi"
 
 class App extends React.Component {
@@ -23,13 +24,14 @@ class App extends React.Component {
             userList: [],
             targetUser: "",
             dingMsg: "",
+            getDeptList: false
         }
     }
 
     render() {
-
-        // 1为根部门
-        this.chooseDept(1);
+        if (!this.state.getDeptList) {
+            this.chooseDept(1);
+        }
         return (
             // 主模块
             <div className="App">
@@ -48,12 +50,12 @@ class App extends React.Component {
                                 ))}
                             </Space>
                         </Radio.Group>
-                        <br />
-                        <br />
+                        <br/>
+                        <br/>
                         <Button type="primary" onClick={() => this.chooseUser()}>
                             选中部门
                         </Button>
-                        <br />
+                        <br/>
 
                     </div>
                 )}
@@ -72,38 +74,42 @@ class App extends React.Component {
                                 ))}
                             </Space>
                         </Radio.Group>
-                        <br />
-                        <br />
+                        <br/>
+                        <br/>
                         <Button type="primary" onClick={() => this.showMsgInput()}>
                             选中用户
                         </Button>
-                        <br />
+                        <br/>
                     </div>
                 )}
                 {this.state.showType === 2 && (
                     <div>
                         <h2>发送ding消息</h2>
-                        <Input onChange={(e)=>this.inputMsg(e)} placeholder="ding消息" />
-                        <br />
-                        <br />
+                        <Input onChange={(e) => this.inputMsg(e)} placeholder="ding消息"/>
+                        <br/>
+                        <br/>
                         <Button type="primary" onClick={() => this.pushDing()}>
                             发送ding消息
                         </Button>
-                        <br />
+                        <br/>
                     </div>
                 )}
             </div>
         );
     }
-    inputMsg(e){
-        this.setState({ dingMsg: e.target.value })
+
+    inputMsg(e) {
+        this.setState({dingMsg: e.target.value})
     }
-    addDept(e){
-        this.setState({ targetDept: e.target.value })
+
+    addDept(e) {
+        this.setState({targetDept: e.target.value})
     }
-    addUser(e){
-        this.setState({ targetUser: e.target.value })
+
+    addUser(e) {
+        this.setState({targetUser: e.target.value})
     }
+
     chooseDept(deptId) {
         axios
             .post(this.state.domain + "/biz/getDeptList", JSON.stringify(deptId), {
@@ -112,7 +118,8 @@ class App extends React.Component {
             .then((res) => {
                 if (res.data.success) {
                     this.setState({
-                        deptList: res.data.data
+                        deptList: res.data.data,
+                        getDeptList: true
                     })
                 } else {
                     message.error(res.data.errorMsg)
@@ -121,7 +128,9 @@ class App extends React.Component {
             .catch((error) => {
                 alert("chooseDept err, " + JSON.stringify(error))
             })
+
     }
+
     chooseUser() {
         axios
             .post(this.state.domain + "/biz/getDeptUser", JSON.stringify(this.state.targetDept), {
@@ -142,16 +151,16 @@ class App extends React.Component {
             })
     }
 
-    showMsgInput(){
-        this.setState({ showType: 2 })
+    showMsgInput() {
+        this.setState({showType: 2})
     }
 
     pushDing() {
         axios
-            .post(this.state.domain + "/biz/sendDing?userId=" + this.state.targetUser + "&message=" + this.state.dingMsg )
+            .post(this.state.domain + "/biz/sendDing?userId=" + this.state.targetUser + "&message=" + this.state.dingMsg)
             .then((res) => {
                 if (res.data.success) {
-                    message.sccess("发送成功")
+                    message.success("发送成功")
                 } else {
                     message.error(res.data.errorMsg)
                 }
