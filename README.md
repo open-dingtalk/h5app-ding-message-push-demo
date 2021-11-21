@@ -86,26 +86,26 @@ npm run build
 
 部门列表
 
-![11](/Users/nannanness/Desktop/11.png)
+![图1](/Users/nannanness/Desktop/11.png)
 
 部门用户列表
 
-![33](/Users/nannanness/Desktop/33.png)
+![图2](/Users/nannanness/Desktop/33.png)
 
 消息输入框
 
-![44](/Users/nannanness/Desktop/44.png)
+![图3](/Users/nannanness/Desktop/44.png)
 
 发送成功提示
 
-![66](/Users/nannanness/Desktop/66.png)
+![图4](/Users/nannanness/Desktop/66.png)
 
 服务窗收到ding消息
 
-![77](/Users/nannanness/Desktop/77.png)
+![图5](/Users/nannanness/Desktop/77.png)
 
 ### **参考文档**
 
-1. 获取企业内部应用access_token，文档链接：https://developers.dingtalk.com/document/app/obtain-orgapp-token?spm=ding_open_doc.document.0.0.938247e54bE13v#topic-1936350
+1. 获取企业内部应用access_token，文档链接：https://developers.dingtalk.com/document/app/obtain-orgapp-token
 2. 获取部门列表，文档链接：https://developers.dingtalk.com/document/app/obtain-the-department-list-v2
 3. 获取部门用户基础信息，文档链接：https://developers.dingtalk.com/document/app/queries-the-simple-information-of-a-department-user
