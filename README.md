@@ -109,3 +109,4 @@ npm run build
 1. 获取企业内部应用access_token，文档链接：https://developers.dingtalk.com/document/app/obtain-orgapp-token
 2. 获取部门列表，文档链接：https://developers.dingtalk.com/document/app/obtain-the-department-list-v2
 3. 获取部门用户基础信息，文档链接：https://developers.dingtalk.com/document/app/queries-the-simple-information-of-a-department-user
+4. DING服务接口，文档链接：https://developers.dingtalk.com/document/app/send-in-application-ding
