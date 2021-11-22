@@ -100,7 +100,7 @@ npm run build
 
 ![图4](https://img.alicdn.com/imgextra/i4/O1CN01zC1dSl1QZvI21OgUw_!!6000000001991-2-tps-399-170.png)
 
-服务窗收到ding消息
+互动服务窗收到ding消息
 
 ![图5](https://img.alicdn.com/imgextra/i4/O1CN01OUF51A1YVofCWAlB7_!!6000000003065-2-tps-379-81.png)
 
