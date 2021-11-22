@@ -82,27 +82,27 @@ npm run build
 - 启动springboot
 - 移动端钉钉点击工作台，找到应用，进入应用
 
-[comment]: <> (### 页面展示)
+### 页面展示
 
-[comment]: <> (部门列表)
+部门列表
 
-[comment]: <> (![图1]&#40;/Users/nannanness/Desktop/11.png&#41;)
+![图1](https://img.alicdn.com/imgextra/i2/O1CN01Dfm8lw1ov2KFaw0q3_!!6000000005286-2-tps-398-456.png)
 
-[comment]: <> (部门用户列表)
+部门用户列表
 
-[comment]: <> (![图2]&#40;/Users/nannanness/Desktop/33.png&#41;)
+![图2](https://img.alicdn.com/imgextra/i4/O1CN01EAdpRL1f1lzdaKEph_!!6000000003947-2-tps-398-211.png)
 
-[comment]: <> (消息输入框)
+消息输入框
 
-[comment]: <> (![图3]&#40;/Users/nannanness/Desktop/44.png&#41;)
+![图3](https://img.alicdn.com/imgextra/i4/O1CN01F5nZAA1aE4YBdN0aI_!!6000000003297-2-tps-399-160.png)
 
-[comment]: <> (发送成功提示)
+发送成功提示
 
-[comment]: <> (![图4]&#40;/Users/nannanness/Desktop/66.png&#41;)
+![图4](https://img.alicdn.com/imgextra/i4/O1CN01zC1dSl1QZvI21OgUw_!!6000000001991-2-tps-399-170.png)
 
-[comment]: <> (服务窗收到ding消息)
+服务窗收到ding消息
 
-[comment]: <> (![图5]&#40;/Users/nannanness/Desktop/77.png&#41;)
+![图5](https://img.alicdn.com/imgextra/i4/O1CN01OUF51A1YVofCWAlB7_!!6000000003065-2-tps-379-81.png)
 
 ### **参考文档**
 
